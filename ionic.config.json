@@ -1,0 +1,7 @@
+{
+  "name": "EnjinIonic4",
+  "type": "angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
