@@ -16,7 +16,8 @@ export class HomePage {
     this.ndef = theWindow.ndef;
     if (this.nfc) {
       this.nfc.addNdefListener((nfcEvent: any) => {
-        console.log(this.nfc.bytesToHexString(nfcEvent.tag.id));
+        console.log(nfcEvent);
+        alert(this.nfc.bytesToHexString(nfcEvent.tag.id));
       });
     }
   }
